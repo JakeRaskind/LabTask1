@@ -1,0 +1,10 @@
+1 alexandrovna
+2 Russian
+3 dom54
+4 full-time
+5 july 21
+6 competition
+7 cooking swimming
+8 children's tutor
+9 project manager
+0 friend
