@@ -60,15 +60,15 @@ def treeWalker(cur_lev, max_depth, margin, prefix=[], frequent=[]):
                 countNgrams(cur_lev, prefix, frequent)
         else:
             prefix.append(key)
-            treeWalker(value, max_depth, prefix, frequent)
+            treeWalker(value, max_depth,    margin, prefix, frequent)
             prefix.pop(-1)
     return frequent
 
 
 def main():
-    filename = input()
-    max_depth = int(input())
-    margin = int(input())
+    filename = input('Input file name: ')
+    max_depth = int(input('Input max n-gram length: '))
+    margin = int(input('Input margin: '))
     text = readText(filename)
     tokens = parseText(text)
     grams = createGrams(tokens, max_depth)
