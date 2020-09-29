@@ -60,7 +60,7 @@ def treeWalker(cur_lev, max_depth, margin, prefix=[], frequent=[]):
                 countNgrams(cur_lev, prefix, frequent)
         else:
             prefix.append(key)
-            treeWalker(value, max_depth,    margin, prefix, frequent)
+            treeWalker(value, max_depth, margin, prefix, frequent)
             prefix.pop(-1)
     return frequent
 
